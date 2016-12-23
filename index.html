@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="angularjs/bootstrap/dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<header id="header">
+			<ul class="col-md-12 top">
+				<li class="col-md-3 lis1">
+					<a href="#">首页</a>
+					<a href="http://www.mycodes.net/" target="_blank">网站首页</a>
+				</li>
+				<li class="col-md-3 col-md-offset-6 lis2">
+					<a href="#">管理员</a>
+					<a href="#">修改密码</a>
+					<a href="#">退出</a>
+				</li>
+			</ul>
+		</header>
+	<div class="col-xs-3">
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		      	<i class="iconfont make">&#xe614;</i>
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          		常用操作
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+					<a href="#!/work"><div class="panel-body"><i class="iconfont do">&#xe66c;</i>作品管理</div></a>
+					<a href="#!/bowen"><div class="panel-body"><i class="iconfont do">&#xe6aa;</i>博文管理</div></a>
+					<a href="#!/classify"><div class="panel-body"><i class="iconfont do">&#xe613;</i>分类管理</div></a>
+					<a href="#!/message"><div class="panel-body"><i class="iconfont do">&#xe60a;</i>留言管理</div></a>
+					<a href="#!/comment"><div class="panel-body"><i class="iconfont do">&#xe605;</i>评论管理</div></a>
+					<a href="#!/friend"><div class="panel-body"><i class="iconfont do">&#xe658;</i>友情链接</div></a>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		      	<i class="iconfont make">&#xe703;</i>
+		        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		        		  系统管理
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">		     
+				<a href="#!/system/"><div class="panel-body"><i class="iconfont do">&#xe63d;</i>系统设置</div></a>
+				<a href="#!/clear"><div class="panel-body"><i class="iconfont do">&#xe670;</i>清理缓存</div></a>
+				<a href="#!/backups"><div class="panel-body"><i class="iconfont do">&#xe663;</i>数据备份</div></a>
+				<a href="#!/reduction"><div class="panel-body"><i class="iconfont do">&#xe691;</i>数据还原</div></a>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div class="col-xs-9">
+		<div ng-view></div>
+	</div>
+		
+	</body>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="angularjs/angular/angular.min.js"></script>
+	<script src="angularjs/angular-route/angular-route.js"></script>
+	<script src="angularjs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/door.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/base.js"></script>
+	<script src="controllerjs/work.js"></script>
+	<script src="controllerjs/bowen.js"></script>
+	<script src="controllerjs/classify.js"></script>
+	<script src="controllerjs/comment.js"></script>
+	<script src="controllerjs/message.js"></script>
+	<script src="controllerjs/friend.js"></script>
+	<script src="controllerjs/system.js"></script>
+	<script src="controllerjs/backups.js"></script>
+	<script src="controllerjs/clear.js"></script>
+	<script src="controllerjs/reduction.js"></script>
+	<script>
+		$('.top a').click(function(){
+			$('.top a').each(function(){
+				$('.top a').css({
+					'background':'#000',
+					'text-decoration':'none'
+				});
+			})
+			$(this).css({'background':'#999'});
+		})
+		
+		$('.collapsed').click(function(){
+			$('.collapsed').css({'text-decoration':'none'})
+		})
+	</script>
+</html>

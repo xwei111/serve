@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto; }
+
+html {
+  font-size: 100px; }
+
+@font-face {
+  font-family: 'iconfont';
+  /* project id 208138 */
+  src: url("//at.alicdn.com/t/font_nf3sfyzjkplanhfr.eot");
+  src: url("//at.alicdn.com/t/font_nf3sfyzjkplanhfr.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_nf3sfyzjkplanhfr.woff") format("woff"), url("//at.alicdn.com/t/font_nf3sfyzjkplanhfr.ttf") format("truetype"), url("//at.alicdn.com/t/font_nf3sfyzjkplanhfr.svg#iconfont") format("svg"); }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+#header {
+  height: 0.6rem;
+  background: #000; }
+  #header .top {
+    height: 0.6rem;
+    font-size: 0.10rem;
+    overflow: hidden; }
+    #header .top .lis1 {
+      height: 0.6rem;
+      display: flex; }
+      #header .top .lis1 a {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff; }
+        #header .top .lis1 a:nth-child(1) {
+          background: #999; }
+    #header .top .lis2 {
+      height: 0.6rem;
+      display: flex; }
+      #header .top .lis2 a {
+        color: #fff;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+#accordion {
+  position: fixed;
+  top: 2rem; }
+  #accordion .panel-default {
+    width: 1.9rem;
+    font-size: 0.1rem;
+    margin-bottom: 0rem;
+    border-radius: 0;
+    border: none;
+    position: relative; }
+    #accordion .panel-default a {
+      font-size: 0.1rem;
+      text-decoration: none; }
+    #accordion .panel-default .make {
+      font-size: 0.08rem;
+      position: absolute;
+      left: 0.12rem;
+      top: 0.24rem; }
+    #accordion .panel-default .panel-heading {
+      padding: 0.1rem 0.4rem;
+      border-radius: 0;
+      border: none;
+      font-weight: 700; }
+    #accordion .panel-default .panel-body {
+      padding: 0.1rem 0;
+      text-align: center;
+      font-size: 0.06rem;
+      position: relative; }
+      #accordion .panel-default .panel-body .do {
+        font-size: 0.06rem;
+        position: absolute;
+        left: 0.5rem;
+        top: 0.09rem; }
+
+/*# sourceMappingURL=style.css.map */

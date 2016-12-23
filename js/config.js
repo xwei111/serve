@@ -1,0 +1,44 @@
+app.config(function($routeProvider){
+	$routeProvider
+	.when('/work',{
+			templateUrl:'html/common/work.html',
+			controller:'workController'
+	})
+	.when('/bowen',{
+			templateUrl:'html/common/bowen.html',
+			controller:'bowenController'
+	})
+	.when('/classify',{
+			templateUrl:'html/common/classify.html',
+			controller:'classifyController'
+	})
+	.when('/message',{
+			templateUrl:'html/common/message.html',
+			controller:'messageController'
+	})
+	.when('/comment',{
+			templateUrl:'html/common/comment.html',
+			controller:'commentController'
+	})
+	.when('/friend',{
+			templateUrl:'html/common/friend.html',
+			controller:'friendController'
+	})
+	.when('/system',{
+			templateUrl:'html/system/system.html',
+			controller:'systemController'
+	})
+	.when('/clear',{
+			templateUrl:'html/system/clear.html',
+			controller:'clearController'
+	})
+	.when('/backups',{
+			templateUrl:'html/system/backups.html',
+			controller:'backupsController'
+	})
+	.when('/reduction',{
+			templateUrl:'html/system/reduction.html',
+			controller:'reductionController'
+	})
+	
+})
